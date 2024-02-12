@@ -1,5 +1,5 @@
 import logging
-import logger  #the logger.py is imported so that it can get logged in the logs
+import src.logger  #the logger.py is imported so that it can get logged in the logs
 import sys   #any exception getting control the sys library will automatically have that information   (sys is a run time related library)
 def error_message_details(error,error_detail:sys):
     _,_,exc_tb=error_detail.exc_info()

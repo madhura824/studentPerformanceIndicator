@@ -1,0 +1,44 @@
+Before applying any parameter tuning and feature selection
+
+[2024-02-17 12:03:27,368] 32 root - INFO -Entered the DataIngestion function inside the Data Ingestion Class 
+[2024-02-17 12:03:27,468] 36 root - INFO -Read the dataset as dataframe
+[2024-02-17 12:03:27,484] 45 root - INFO -Train Test Split initiated
+[2024-02-17 12:03:27,608] 51 root - INFO -Ingestion of the data is completed
+[2024-02-17 12:03:27,634] 78 root - INFO -Read train and test data completed
+[2024-02-17 12:03:27,634] 80 root - INFO -Obtaining preprocessing object
+[2024-02-17 12:03:27,634] 81 root - INFO -Columns in train_df are ['school', 'sex', 'age', 'address', 'famsize', 'Pstatus', 'Medu', 'Fedu', 'Mjob', 'Fjob', 'reason', 'guardian', 'traveltime', 'studytime', 'failures', 'schoolsup', 'famsup', 'paid', 'activities', 'nursery', 'higher', 'internet', 'romantic', 'famrel', 'freetime', 'goout', 'Dalc', 'Walc', 'health', 'absences', 'G1', 'G2', 'G3']
+[2024-02-17 12:03:27,635] 82 root - INFO -Columns in test_df are ['school', 'sex', 'age', 'address', 'famsize', 'Pstatus', 'Medu', 'Fedu', 'Mjob', 'Fjob', 'reason', 'guardian', 'traveltime', 'studytime', 'failures', 'schoolsup', 'famsup', 'paid', 'activities', 'nursery', 'higher', 'internet', 'romantic', 'famrel', 'freetime', 'goout', 'Dalc', 'Walc', 'health', 'absences', 'G1', 'G2', 'G3']
+[2024-02-17 12:03:27,635] 34 root - INFO -Numrical columns in data transformaer object are ['age', 'Medu', 'Fedu', 'traveltime', 'studytime', 'failures', 'famrel', 'freetime', 'goout', 'Dalc', 'Walc', 'health', 'absences', 'G1', 'G2']
+[2024-02-17 12:03:27,635] 54 root - INFO -Categorical columns: ['school', 'sex', 'address', 'famsize', 'Pstatus', 'Mjob', 'Fjob', 'reason', 'guardian', 'schoolsup', 'famsup', 'paid', 'activities', 'nursery', 'higher', 'internet', 'romantic']
+[2024-02-17 12:03:27,635] 55 root - INFO -Numerical columns: ['age', 'Medu', 'Fedu', 'traveltime', 'studytime', 'failures', 'famrel', 'freetime', 'goout', 'Dalc', 'Walc', 'health', 'absences', 'G1', 'G2']
+[2024-02-17 12:03:27,679] 97 root - INFO -Applying preprocessing object on training dataframe and testing dataframe.
+[2024-02-17 12:03:27,679] 100 root - INFO -Columns in input_features_train_df are ['school', 'sex', 'age', 'address', 'famsize', 'Pstatus', 'Medu', 'Fedu', 'Mjob', 'Fjob', 'reason', 'guardian', 'traveltime', 'studytime', 'failures', 'schoolsup', 'famsup', 'paid', 'activities', 'nursery', 'higher', 'internet', 'romantic', 'famrel', 'freetime', 'goout', 'Dalc', 'Walc', 'health', 'absences', 'G1', 'G2']
+[2024-02-17 12:03:27,679] 103 root - INFO -Columns in input_features_test_df are ['school', 'sex', 'age', 'address', 'famsize', 'Pstatus', 'Medu', 'Fedu', 'Mjob', 'Fjob', 'reason', 'guardian', 'traveltime', 'studytime', 'failures', 'schoolsup', 'famsup', 'paid', 'activities', 'nursery', 'higher', 'internet', 'romantic', 'famrel', 'freetime', 'goout', 'Dalc', 'Walc', 'health', 'absences', 'G1', 'G2']
+[2024-02-17 12:03:27,794] 114 root - INFO -Saved preprocessing object.
+[2024-02-17 12:03:27,801] 35 root - INFO -Splitting training and testing data
+[2024-02-17 12:03:29,294] 32 root - INFO - report generated after evaluate_model in utils {'Random Forrest': 0.8051693026599569, 'Decision Tree': 0.6042962523051918, 'Gradient Boosting': 0.8082612400217177, 'Linear Regressor': 0.7264610068511081, 'K-Neighbors Classifier': 0.3353164754790111, 'XGBClassifier': 0.7725627226186166, 'Adaboost Classifier': 0.8098392751181599}
+[2024-02-17 12:03:29,294] 57 root - INFO -best model score : 0.8098392751181599
+[2024-02-17 12:03:29,294] 63 root - INFO -best model name : Adaboost Classifier
+
+
+After applying hyper parameter tuning
+
+[2024-02-17 21:38:08,777] 32 root - INFO -Entered the DataIngestion function inside the Data Ingestion Class 
+[2024-02-17 21:38:08,873] 36 root - INFO -Read the dataset as dataframe
+[2024-02-17 21:38:08,904] 45 root - INFO -Train Test Split initiated
+[2024-02-17 21:38:09,029] 51 root - INFO -Ingestion of the data is completed
+[2024-02-17 21:38:09,044] 78 root - INFO -Read train and test data completed
+[2024-02-17 21:38:09,044] 80 root - INFO -Obtaining preprocessing object
+[2024-02-17 21:38:09,044] 81 root - INFO -Columns in train_df are ['school', 'sex', 'age', 'address', 'famsize', 'Pstatus', 'Medu', 'Fedu', 'Mjob', 'Fjob', 'reason', 'guardian', 'traveltime', 'studytime', 'failures', 'schoolsup', 'famsup', 'paid', 'activities', 'nursery', 'higher', 'internet', 'romantic', 'famrel', 'freetime', 'goout', 'Dalc', 'Walc', 'health', 'absences', 'G1', 'G2', 'G3']
+[2024-02-17 21:38:09,044] 82 root - INFO -Columns in test_df are ['school', 'sex', 'age', 'address', 'famsize', 'Pstatus', 'Medu', 'Fedu', 'Mjob', 'Fjob', 'reason', 'guardian', 'traveltime', 'studytime', 'failures', 'schoolsup', 'famsup', 'paid', 'activities', 'nursery', 'higher', 'internet', 'romantic', 'famrel', 'freetime', 'goout', 'Dalc', 'Walc', 'health', 'absences', 'G1', 'G2', 'G3']
+[2024-02-17 21:38:09,044] 34 root - INFO -Numrical columns in data transformaer object are ['age', 'Medu', 'Fedu', 'traveltime', 'studytime', 'failures', 'famrel', 'freetime', 'goout', 'Dalc', 'Walc', 'health', 'absences', 'G1', 'G2']
+[2024-02-17 21:38:09,044] 54 root - INFO -Categorical columns: ['school', 'sex', 'address', 'famsize', 'Pstatus', 'Mjob', 'Fjob', 'reason', 'guardian', 'schoolsup', 'famsup', 'paid', 'activities', 'nursery', 'higher', 'internet', 'romantic']
+[2024-02-17 21:38:09,044] 55 root - INFO -Numerical columns: ['age', 'Medu', 'Fedu', 'traveltime', 'studytime', 'failures', 'famrel', 'freetime', 'goout', 'Dalc', 'Walc', 'health', 'absences', 'G1', 'G2']
+[2024-02-17 21:38:09,076] 97 root - INFO -Applying preprocessing object on training dataframe and testing dataframe.
+[2024-02-17 21:38:09,076] 100 root - INFO -Columns in input_features_train_df are ['school', 'sex', 'age', 'address', 'famsize', 'Pstatus', 'Medu', 'Fedu', 'Mjob', 'Fjob', 'reason', 'guardian', 'traveltime', 'studytime', 'failures', 'schoolsup', 'famsup', 'paid', 'activities', 'nursery', 'higher', 'internet', 'romantic', 'famrel', 'freetime', 'goout', 'Dalc', 'Walc', 'health', 'absences', 'G1', 'G2']
+[2024-02-17 21:38:09,076] 103 root - INFO -Columns in input_features_test_df are ['school', 'sex', 'age', 'address', 'famsize', 'Pstatus', 'Medu', 'Fedu', 'Mjob', 'Fjob', 'reason', 'guardian', 'traveltime', 'studytime', 'failures', 'schoolsup', 'famsup', 'paid', 'activities', 'nursery', 'higher', 'internet', 'romantic', 'famrel', 'freetime', 'goout', 'Dalc', 'Walc', 'health', 'absences', 'G1', 'G2']
+[2024-02-17 21:38:09,200] 114 root - INFO -Saved preprocessing object.
+[2024-02-17 21:38:09,200] 35 root - INFO -Splitting training and testing data
+[2024-02-17 21:39:27,035] 44 root - INFO - report generated after evaluate_model in utils {'Random Forest': 0.7642764378145219, 'Decision Tree': 0.6728190541680993, 'Gradient Boosting': 0.808019021647602, 'Linear Regression': 0.7264610068511081, 'K-Neighbors Regressor': 0.3353164754790111, 'XGBRegressor': 0.779286089458071, 'Adaboost Regressor': 0.830666765910182}
+[2024-02-17 21:39:27,035] 94 root - INFO -best model score : 0.830666765910182
+[2024-02-17 21:39:27,035] 100 root - INFO -best model name : Adaboost Regressor
